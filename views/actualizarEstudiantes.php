@@ -28,12 +28,11 @@
     <form action="../controllers/controllerEstudiante.php" method="POST"> 
         <table class="table table-striped table-bordered table-hover align-middle " border="1" cellpading="1" cellspacing="0"> 
             <tr> 
-                <input type="hidden" name="nombre" value="<?php echo $estudiante->getNombre()?>"> 
+                <input type="hidden" name="id" value="<?php echo $estudiante->getId()?>"> 
                 <td>Nombre del estudiante</td> 
                 <td><input type="text" name="nombre" value="<?php echo $estudiante->getNombre()?>"></td> 
             </tr>
-            <tr> 
-                <input type="hidden" name="apellido" value="<?php echo $estudiante->getApellido()?>"> 
+            <tr>
                 <td>Apellido del estudiante</td> 
                 <td><input type="text" name="apellido" value="<?php echo $estudiante->getApellido()?>"></td> 
             </tr>
